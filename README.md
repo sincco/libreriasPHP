@@ -1,0 +1,2 @@
+# sFTP
+Simple FTP
