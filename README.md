@@ -60,7 +60,6 @@ $_csv = new sCSV("archivo.csv",",");
 $_csv->html($datos);
 ```
 
-
 ----
 Licencia
 ----
