@@ -43,9 +43,9 @@ Simple CSV
 
 Permite la creación de archivos CSV de forma rápida y fácil.
 
-###exportar($arregloDatos)
+####exportar($arregloDatos)
 Genera el achivo con los datos pasados
-###html($arregloDatos)
+####html($arregloDatos)
 Genera el archivo como salida al navegador con las cabeceras necesarias para una descarga directa (con base al archivo
 
 #### Ejemplo de uso:
