@@ -1,5 +1,7 @@
 # sFTP
 Simple FTP
+### Version
+1.0
 
 Permite manipular la conexión de a un servidor FTP de un modo más simple.
 
@@ -36,6 +38,8 @@ $ftp->cerrar();
 
 # sCSV
 Simple CSV
+### Version
+1.0
 
 Permite la creación de archivos CSV de forma rápida y fácil.
 
