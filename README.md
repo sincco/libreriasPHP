@@ -3,8 +3,6 @@ Simple FTP
 
 Permite manipular la conexión de a un servidor FTP de un modo más simple.
 
-Las funciones pueden ser traducidas a un cualquier idioma editando el arreglo de alias de cada función ftp de PHP que se desee.
-
 La conexión se invoca desde el armado de una URL al cargar la clase:
 ```
 $ftp = new sFTP("ftp://usuario:password@host[:puerto]/[carpeta]");
@@ -16,7 +14,7 @@ $ftp->listar(".");
 $ftp->nlist(".");
 ```
 
-# Ejemplo de uso:
+### Ejemplo de uso:
 
 ```
 <?php
@@ -36,4 +34,31 @@ $ftp->bajar('baja.tmp', 'archivo.txt', FTP_ASCII);
 $ftp->cerrar();
 ```
 
-@deivanmiranda - http://ivanmiranda.me
+# sCSV
+Simple CSV
+
+Permite la creación de archivos CSV de forma rápida y fácil.
+
+###exportar($arregloDatos)
+Genera el achivo con los datos pasados
+###html($arregloDatos)
+Genera el archivo como salida al navegador con las cabeceras necesarias para una descarga directa (con base al archivo
+
+### Ejemplo de uso:
+
+```
+<?php
+require_once 'sCSV.php';
+
+//Instanciar la clase diciendo que archivo y separador utilizar
+$_csv = new sCSV("archivo.csv",",");
+//Parsear descarga desde el navegador
+$_csv->html($datos);
+```
+
+License
+----
+MIT
+
+**@deivanmiranda - http://ivanmiranda.me**
+
