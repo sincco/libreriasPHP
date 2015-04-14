@@ -1,6 +1,6 @@
 # sFTP
 Simple FTP
-### Version
+#### Version
 1.0
 
 Permite manipular la conexión de a un servidor FTP de un modo más simple.
