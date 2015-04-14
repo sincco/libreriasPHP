@@ -16,7 +16,7 @@ $ftp->listar(".");
 $ftp->nlist(".");
 ```
 
-### Ejemplo de uso:
+#### Ejemplo de uso:
 
 ```
 <?php
@@ -48,7 +48,7 @@ Genera el achivo con los datos pasados
 ###html($arregloDatos)
 Genera el archivo como salida al navegador con las cabeceras necesarias para una descarga directa (con base al archivo
 
-### Ejemplo de uso:
+#### Ejemplo de uso:
 
 ```
 <?php
