@@ -60,6 +60,48 @@ $_csv = new sCSV("archivo.csv",",");
 $_csv->html($datos);
 ```
 
+# sRSS
+Simple RSS
+#### Version
+1.0
+
+Crea un feed de noticias en base a los datos pasados.
+
+###__construct(namespace array,datos_canal array, url_sitio string, nombre_sitio string[, caracteres_contenido int, contenido_completo boolean])
+
+Al iniciar la clase se pasan los datos referentes al canal que se está creando, los namespaces que se involucran y el limite de caracteres del texto de contenido del elemento.
+```
+$_namespace = 'xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:media="http://search.yahoo.com/mrss"';
+
+$_canal = array(
+	"titulo" => "APSICAT",
+	"link" => "http://apsicat.com",
+	"descripcion" => "Lectura de apoyo",
+	"language" => "es",
+	"imagen_titulo" => "apsicat.com",
+	"imagen_link" => "http://apsicat.com",
+	"imagen_url" => "http://apsicat.com/html/images/logo.png",
+);
+$rss = new sRSS($_namespace, $_canal, 'http://ivanmiranda.me', 'Codigos y otras ideas al aire', 150);
+```
+###crear(elementos array)
+
+```
+#El arreglo de elementos debe tener las llaves:
+$elemento = array(
+  "titulo" => "Titulo artículo",
+  "link" => "http://liga.com/articulo",
+  "contenido" => "Contenido del articulo[...]",
+  "fecha" => "2015-01-01",
+  "imagen" => "http://liga.com/imagen.xxx" #Opcional
+);
+
+$rss->crear($elemento);
+```
 ----
 Licencia
 ----
