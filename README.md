@@ -102,6 +102,26 @@ $elemento = array(
 
 $rss->crear($elemento);
 ```
+
+# SCFD
+Simple CFD
+#### Version
+1.0
+
+Permite manipular CFD's
+
+#### Ejemplo de uso:
+
+```
+<?php
+require_once 'sCFD.php';
+
+$_cfd = New sCFD(PATH_URL."/cfds/".$archivo.".xml");
+$_datos = $_cfd->leer();
+//El arreglo $_datos ahora tiene los elementos de cada sección que se quiera consultar
+//pej. $_datos['Emisor']['rfc']
+```
+
 ----
 Licencia
 ----
